@@ -22,9 +22,11 @@ this project contains a CrowdAnki deck representation, meant to be downloaded an
 git clone https://github.com/ellaeln/bio-mon.git``
 
 the files will download themselves into the folder
+
 4. in anki, go to File->crowdAnki: import from disk
 
 this will open a file navigation window. navigate to the folder in which bio-mon is cloned and select it.
+
 5. approve the import
 
 the deck will be created\updated.
