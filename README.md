@@ -35,18 +35,30 @@ you are officially ready to play!
 
 ##  how to contribute (Pull Requests)
 This project is public, but only authorized members can merge changes to the main deck. To contribute:
-1. **Fork** this repository to your own GitHub account. Use the botton in the upper right corner. this will create a copy of the project under your account, allowing you to edit and interact with it.  
+1. **Fork** this repository to your own GitHub account. Use the button in the upper right corner. This will create a copy of the project under your account, allowing you to edit and interact with it.
 2. **Clone** your fork by following "getting started" again replacing the link with your own.
-3.  **Write cards** add your cards/edits in Anki.
-3. **Export** from Anki using CrowdAnki back into the folder. make sure to pick "crowdAnki json format" to ensure compatibility
-4. **Push** the changes to *your* fork and open a **Pull Request (PR)**.
-5. The team* will review the changes and merge them into the main bio-mon deck!
+3. **Write cards** add your cards/edits in Anki.
+4. **Export** from Anki using CrowdAnki back into the folder. Make sure to pick "CrowdAnki JSON format" to ensure compatibility.
+5. **Push** the changes to *your* fork and open a **Pull Request (PR)**.
+6. The team will review the changes and merge them into the main bio-mon deck!
 
-Make sure you use the latest version of deck before merging, uncurrent request with a few new cards will be rejected to avoid losing progress.
+*Make sure you use the latest version of the deck before merging. Outdated requests with a few new cards will be rejected to avoid losing progress.*
 
 
-## 🧬 card matching rules (DNA integrity)
+## anki best practices (how to build a winning mon)
+The goal of Anki is to move info from short-term to long-term memory using **Active Recall**. To make this effective, follow these rules:
+
+* **Keep it Atomic**: One card = one specific fact. Don't try to cram the entire Krebs cycle into one card. It's better to have 5 small cards than 1 giant, confusing card.
+* **Clear Questions**: Avoid vague prompts. Instead of "Mitochondria?", use "What is the primary function of the Mitochondria in a eukaryotic cell?".
+* **Understand First**: Don't make a card for something you don't understand. Memorizing gibberish won't help you in the exam, and you might confuse others.
+* **Use Cloze Deletions**: When possible, use the "Fill-in-the-blank" style `{{c1::word}}`. It's often faster and more effective for biology definitions.
+* **Context is King**: Use tags or bold text to specify which topic the card belongs to (e.g., **[Genetics]** or **[Cell Bio]**). Make sure to add it to the correct subdeck. Not sure where your card belongs? ask the team!
+
+
+## card matching rules (DNA integrity)
 To make sure our cards sync correctly and don't create duplicates:
 * **Don't delete and recreate**: If you want to edit a card, just edit it. CrowdAnki uses hidden UUIDs to match cards. If you delete and recreate, it counts as a new card and will cause double-entries for everyone else.
 * **Keep the structure**: Do not change the Note Type or rename the fields (Front, Back, etc.). The "DNA" of the card must stay the same for the merge to work.
 * **Media**: If you add images, ensure they are in the project folder before you export and commit.
+
+**Time to evolve your memory!**
